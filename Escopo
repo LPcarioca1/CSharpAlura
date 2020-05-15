@@ -12,13 +12,14 @@ namespace Escopo
 
             if (acompanhado == true)
             {
+                //mensagem puxada pela variável
                 mensagemAdicional = "Luis está acompanhado!";
             }
             else
             {
                 mensagemAdicional = "Luis não está acompanhado!";
             }
-
+            //2 condições
             if (idadeLuis >= 18 || acompanhado == true)
             {
                 Console.WriteLine("Pode entrar.");
