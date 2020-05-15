@@ -1,0 +1,41 @@
+namespace P13_ForEncadeado
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Projeto 13");
+
+            // *
+            // **
+            // ***
+            // ****...
+
+            //Escrevendo asteriscos com o Break(pare)
+            for (int contadorLinha = 0; contadorLinha < 10; contadorLinha++)
+            {
+                for (int contadorColuna = 0; contadorColuna < 10; contadorColuna++)
+                {
+                    Console.Write("*");
+                    if (contadorColuna >= contadorLinha)
+                        break;
+                }
+                //whriteLine vazio serve pra pular a linha;
+                Console.WriteLine();
+            }
+
+            //Uma forma diferente de fazer o desenho de asteriscos
+            for (int contadorLinha = 0; contadorLinha < 10; contadorLinha++)
+            {
+                for (int contadorColuna = 0; contadorColuna <= contadorLinha; contadorColuna++)
+                    //quando só tem 1 instrução não precisa abrir e fechar chaves{}
+                    Console.Write("*");
+
+                //whriteLine vazio serve pra pular a linha;
+                Console.WriteLine();
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
