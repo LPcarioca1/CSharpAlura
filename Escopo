@@ -1,0 +1,36 @@
+namespace Escopo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Executando o projeto 9 - Escopo");
+
+            int idadeLuis = 18;
+            bool acompanhado = true;
+            string mensagemAdicional;
+
+            if (acompanhado == true)
+            {
+                mensagemAdicional = "Luis está acompanhado!";
+            }
+            else
+            {
+                mensagemAdicional = "Luis não está acompanhado!";
+            }
+
+            if (idadeLuis >= 18 || acompanhado == true)
+            {
+                Console.WriteLine("Pode entrar.");
+                Console.WriteLine(mensagemAdicional);
+            }
+            else
+            {
+                Console.WriteLine("Não pode entrar");
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
+

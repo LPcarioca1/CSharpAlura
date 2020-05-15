@@ -1,2 +1,0 @@
-# SqlExercicios
-# SqlExercicios
