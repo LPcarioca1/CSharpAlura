@@ -9,7 +9,7 @@ namespace _10_CalculaPoupanca
             double valorInvestido = 1000;
             int contadorMes = 1;
              
-            //enquanto
+            //enquanto variavel for menor ou igual a 12, executa o bloco.
             while (contadorMes <= 12)
             {
                 // 0.36% = 0.0036
